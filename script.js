@@ -9,7 +9,7 @@ var questions = [{
 }, {
     title: "Which is NOT a semantic element?",
     answers: ["Header", "Navigation", "Aside", "Div"],
-    correctAnswer2: "Div" 
+    correctAnswer: "Div" 
 
 }, {
 title: "What are variables used to store?",
@@ -41,6 +41,7 @@ var startButton =  document.getElementById("start")
 var seconds = document.getElementById("time")
 var index = 0
 var answersSection = document.getElementById("answers")
+var rightAnswer= document.getElementById 
 
 
 function start() {
@@ -80,6 +81,14 @@ function displayQuestions() {
         answerButton.setAttribute("value", currentQuestion.answers[i]);
         answersSection.appendChild(answerButton);
     }
+}
+
+function checkIfCorrect() {
+    if (this.value !== questions[index].correctAnswer)
+    {
+        answersSection.Button.onclick= checkIfCorrect();
+    }
+    
 }
 
 
