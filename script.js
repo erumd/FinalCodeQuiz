@@ -41,8 +41,8 @@ var startButton =  document.getElementById("start")
 var seconds = document.getElementById("time")
 var index = 0
 var answersSection = document.getElementById("answers")
-// not sure about the bottom
-var rightAnswer= document.getElementById 
+var answerButton = document.getElementById ("")
+
 
 
 function start() {
@@ -50,9 +50,6 @@ function start() {
     instructionsDiv.setAttribute("class", "hide")
     timer = setInterval(countdown, 1000)
     displayQuestions();
-
-
-
 }
 
 startButton.onclick = start;
@@ -73,6 +70,10 @@ function displayQuestions() {
     // answersSection.innerHTML = "";
     // looping through every answer of current question
     for (let i = 0; i < currentQuestion.answers.length; i++) {
+
+        answersButton.onclick= checkIfCorrect;
+
+
         var answerButton = document.createElement("button");
         answerButton.textContent = currentQuestion.answers[i];
         console.log(currentQuestion.answers[i]);
@@ -86,12 +87,15 @@ function displayQuestions() {
 
 // question not going next 
 function checkIfCorrect() {
+    console.log("clicked on an answer!")
     if (this.value !== questions[index].correctAnswer)
     {
-        answersSection.Button.onclick= checkIfCorrect();
+        // get rid
+        // answersButton.onclick= checkIfCorrect();
     }
     
 }
+answerButton.textContent= currentQuestion.answers[i]
 
 
 
