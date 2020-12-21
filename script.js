@@ -106,30 +106,4 @@ function checkIfCorrect() {
     
 
 
-// // } else {
-//     //increment the Score varialbe?
-    
-//     alert("Correct");
-//   }
-//   index++;
-//   console.log("index is", index);
-//   // if user answers the last question, stop the timer and prompt "Game Over"
-//   // else display question?
-// if (index === questions.length) {
-//     seconds <= 0 
-//     clearInterval (timer);
-//     alert ("Game Over")   
-// }
-// //   displayQuestions();
-// }
-
-
-
-
-
-
-    // in line 93 there is a comment that says increment score variable, 
-    // this variable doesn't exist yet, you need to create it and initialize it to zero, 
-    // like the index variable on line 39
-
 
