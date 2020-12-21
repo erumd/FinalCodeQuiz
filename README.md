@@ -3,6 +3,8 @@
 
 Built a timed coding quiz with multiple-choice questions. This app will runs in the browser, and feature dynamically updated HTML and CSS powered by JavaScript code. It has a clean, polished, and responsive user interface. 
 
+Resources used Visual Studio Tool, W3schools.com, stackoverflow.com, and my tutor. 
+
 
 
 ## Acceptance Criteria

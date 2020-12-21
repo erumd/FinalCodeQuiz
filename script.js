@@ -58,13 +58,14 @@ function displayQuestions() {
     var questionTitle = document.getElementById("title")
 // .title because accessing an object within the array
     questionTitle.textContent = currentQuestion.title; 
-    // answersSection.innerHTML = "";
+    answersSection.innerHTML = "";
     // looping through every answer of current question
     for (let i = 0; i < currentQuestion.answers.length; i++) {
 
 
         var answerButton = document.createElement("button");
 
+        // move outside function
         answerButton.onclick= checkIfCorrect;
         answerButton.textContent = currentQuestion.answers[i];
         console.log(currentQuestion.answers[i]);
@@ -75,6 +76,10 @@ function displayQuestions() {
         answersSection.appendChild(answerButton);
     }
 }
+
+
+answerButton.onclick= checkIfCorrect;
+
 
 // question not going next 
 function checkIfCorrect() {
@@ -89,6 +94,7 @@ function checkIfCorrect() {
   } else {
     alert  ("Correct")
   }
+  index++
     }
     
 
