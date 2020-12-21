@@ -34,6 +34,8 @@ var startButton =  document.getElementById("start")
 var seconds = document.getElementById("time")
 var index = 0
 var answersSection = document.getElementById("answers")
+var highScore = document.getElementById ("highScore");
+highScore = 100; 
 
 
 function start() {
@@ -86,6 +88,8 @@ function checkIfCorrect() {
     
             // reduce time from timer
             time = time - 10;
+            highScore -= 10;
+            console.log (highScore);
     // update the new time on the screen
     seconds.textContent = time;
 // else - user got it correct
@@ -99,6 +103,7 @@ function checkIfCorrect() {
     seconds <= 0 
     clearInterval (timer);
     alert ("Game Over")
+    alert (`Your Final Score is ${highScore}`);
     prompt (" Enter your Initials and Score ")   
 }
   displayQuestions();
