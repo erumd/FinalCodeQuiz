@@ -41,7 +41,7 @@ var startButton =  document.getElementById("start")
 var seconds = document.getElementById("time")
 var index = 0
 var answersSection = document.getElementById("answers")
-var answerButton = document.getElementById ("")
+
 
 
 
@@ -71,10 +71,12 @@ function displayQuestions() {
     // looping through every answer of current question
     for (let i = 0; i < currentQuestion.answers.length; i++) {
 
-        answersButton.onclick= checkIfCorrect;
+       
 
 
         var answerButton = document.createElement("button");
+
+        answerButton.onclick= checkIfCorrect;
         answerButton.textContent = currentQuestion.answers[i];
         console.log(currentQuestion.answers[i]);
 
@@ -95,7 +97,7 @@ function checkIfCorrect() {
     }
     
 }
-answerButton.textContent= currentQuestion.answers[i]
+// answerButton.textContent= currentQuestion.answers[i]
 
 
 
