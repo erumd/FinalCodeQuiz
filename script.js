@@ -1,5 +1,5 @@
 var questions = [{
-    title: "What do you use to style your html",
+    title: "What is used to style your html?",
     answers: ["CSS", "JavaScript", "Jquery", "GitHub"],
     correctAnswer: "css"
 }, {
@@ -78,16 +78,13 @@ function displayQuestions() {
 }
 
 
-answerButton.onclick= checkIfCorrect;
-
-
 // question not going next 
 function checkIfCorrect() {
     console.log("clicked on an answer!")
     if (this.value !== questions[index].correctAnswer)
     {
             // reduce time from timer
-            seconds -=10; 
+            time = time - 10;
     // update the new time on the screen
     seconds.textContent = time;
 // else - user got it correct
@@ -95,6 +92,10 @@ function checkIfCorrect() {
     alert  ("Correct")
   }
   index++
+  console.log("index is", index);
+   // if user answers the last question, stop the timer and prompt "Game Over"
+  // else display question
+  displayQuestions();
     }
     
 
