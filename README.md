@@ -31,9 +31,6 @@ The following animation demonstrates the application functionality:
 ![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
 
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
 
 ### Technical Acceptance Criteria: 40%
 

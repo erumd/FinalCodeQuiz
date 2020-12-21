@@ -95,20 +95,33 @@ function checkIfCorrect() {
   index++
   console.log("index is", index);
 
+  if (index === questions.length) {
+    seconds <= 0 
+    clearInterval (timer);
+    alert ("Game Over")   
+}
+
   displayQuestions();
 }
     
 
 
 // // } else {
-//     //increment the Score varialbe
+//     //increment the Score varialbe?
+    
 //     alert("Correct");
 //   }
 //   index++;
 //   console.log("index is", index);
 //   // if user answers the last question, stop the timer and prompt "Game Over"
-//   // else display question
-//   displayQuestions();
+//   // else display question?
+// if (index === questions.length) {
+//     seconds <= 0 
+//     clearInterval (timer);
+//     alert ("Game Over")   
+// }
+// //   displayQuestions();
+// }
 
 
 
