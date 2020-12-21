@@ -41,6 +41,7 @@ var startButton =  document.getElementById("start")
 var seconds = document.getElementById("time")
 var index = 0
 var answersSection = document.getElementById("answers")
+// not sure about the bottom
 var rightAnswer= document.getElementById 
 
 
@@ -83,6 +84,7 @@ function displayQuestions() {
     }
 }
 
+// question not going next 
 function checkIfCorrect() {
     if (this.value !== questions[index].correctAnswer)
     {
