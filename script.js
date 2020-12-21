@@ -72,6 +72,7 @@ function displayQuestions() {
     // looping through every answer of current question
     for (let i = 0; i < currentQuestion.answers.length; i++) {
         var answerButton = document.createElement("button");
+        answerButton.textContent = currentQuestion.answers[i];
         console.log(currentQuestion.answers[i]);
 
         // "CSS", "JavaScript", "Jquery", "GitHub"
