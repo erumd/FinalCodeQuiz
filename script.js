@@ -82,7 +82,7 @@ function checkIfCorrect() {
     if (this.value !== questions[index].correctAnswer)
     {
             // reduce time from timer
-        seconds-10; 
+            seconds -=10; 
     // update the new time on the screen
     seconds.textContent = time;
 // else - user got it correct
