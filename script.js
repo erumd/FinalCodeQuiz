@@ -19,8 +19,8 @@ correctAnswer:"Data Values"
     title: "In conditional statements which words are NOT used?",
     answers: ["If", "Else", "Else If", "Than"],
     correctAnswer: "Than"
-}, {
-}, {
+}, 
+{
     
     title: "A function is a block of code designed to perform a particular _____?",
     answers:["Data", "Task", "Loop","Condition"],
@@ -76,13 +76,14 @@ function displayQuestions() {
         answersSection.appendChild(answerButton);
     }
 }
-
-
 // question not going next 
 function checkIfCorrect() {
+    console.log(this.value, "was clicked");
     console.log("clicked on an answer!")
-    if (this.value !== questions[index].correctAnswer)
-    {
+
+    questions[index].correctAnswer;
+        if (this.value !== questions[index].correctAnswer) {
+    
             // reduce time from timer
             time = time - 10;
     // update the new time on the screen
@@ -93,12 +94,29 @@ function checkIfCorrect() {
   }
   index++
   console.log("index is", index);
-   // if user answers the last question, stop the timer and prompt "Game Over"
-  // else display question
+
   displayQuestions();
-    }
+}
     
 
 
+// // } else {
+//     //increment the Score varialbe
+//     alert("Correct");
+//   }
+//   index++;
+//   console.log("index is", index);
+//   // if user answers the last question, stop the timer and prompt "Game Over"
+//   // else display question
+//   displayQuestions();
+
+
+
+
+
+
+    // in line 93 there is a comment that says increment score variable, 
+    // this variable doesn't exist yet, you need to create it and initialize it to zero, 
+    // like the index variable on line 39
 
 
