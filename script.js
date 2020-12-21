@@ -28,21 +28,12 @@ correctAnswer:"Data Values"
 }
 ]
 
-
-
-
-
-
-
-
 var time = 100;
 var timer;
 var startButton =  document.getElementById("start")
 var seconds = document.getElementById("time")
 var index = 0
 var answersSection = document.getElementById("answers")
-
-
 
 
 function start() {
@@ -71,8 +62,6 @@ function displayQuestions() {
     // looping through every answer of current question
     for (let i = 0; i < currentQuestion.answers.length; i++) {
 
-       
-
 
         var answerButton = document.createElement("button");
 
@@ -92,13 +81,16 @@ function checkIfCorrect() {
     console.log("clicked on an answer!")
     if (this.value !== questions[index].correctAnswer)
     {
-        // get rid
-        // answersButton.onclick= checkIfCorrect();
+            // reduce time from timer
+        seconds-10; 
+    // update the new time on the screen
+    seconds.textContent = time;
+// else - user got it correct
+  } else {
+    alert  ("Correct")
+  }
     }
     
-}
-// answerButton.textContent= currentQuestion.answers[i]
-
 
 
 
