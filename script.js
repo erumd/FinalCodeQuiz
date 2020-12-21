@@ -98,9 +98,9 @@ function checkIfCorrect() {
   if (index === questions.length) {
     seconds <= 0 
     clearInterval (timer);
-    alert ("Game Over")   
+    alert ("Game Over")
+    prompt (" Enter your Initials and Score ")   
 }
-
   displayQuestions();
 }
     
