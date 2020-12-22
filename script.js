@@ -80,22 +80,27 @@ function displayQuestions() {
 }
 // question not going next 
 function checkIfCorrect() {
+
     console.log(this.value, "was clicked");
     console.log("clicked on an answer!")
 
     questions[index].correctAnswer;
         if (this.value !== questions[index].correctAnswer) {
     
-            // reduce time from timer
+            // reduce time from timer and subtract points 
             time = time - 10;
             highScore -= 10;
             console.log (highScore);
     // update the new time on the screen
-    seconds.textContent = time;
+            seconds.textContent = time;
 // else - user got it correct
-  } else {
-    alert  ("Correct")
-  }
+       
+        } else {
+         alert  ("Correct") 
+            
+        }
+        
+
   index++
   console.log("index is", index);
 
@@ -105,8 +110,13 @@ function checkIfCorrect() {
     alert ("Game Over")
     alert (`Your Final Score is ${highScore}`);
     prompt (" Enter your Initials and Score ")   
+
+    localStorage.setItem ('initials', initials);
+    localStorage.setItem ('highScore', highScore);
 }
   displayQuestions();
+//   trying to get quiz to start again automatically 
+  return start;
 }
     
 
