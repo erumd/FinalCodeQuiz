@@ -19,13 +19,13 @@ correctAnswer:"Data Values"
     title: "In conditional statements which words are NOT used?",
     answers: ["If", "Else", "Else If", "Than"],
     correctAnswer: "Than"
-}, 
-{
+}, {
     
     title: "A function is a block of code designed to perform a particular _____?",
     answers:["Data", "Task", "Loop","Condition"],
     correctAnswer: "Task"
 }
+
 ]
 
 var time = 100;
@@ -109,7 +109,9 @@ function checkIfCorrect() {
     clearInterval (timer);
     alert ("Game Over")
     alert (`Your Final Score is ${highScore}`);
-    prompt (" Enter your Initials and Score ")   
+    prompt (" Enter your Score ") 
+    prompt (" Enter your Initials ") 
+
 
     localStorage.setItem ('initials', initials);
     localStorage.setItem ('highScore', highScore);
